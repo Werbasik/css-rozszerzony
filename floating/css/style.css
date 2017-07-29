@@ -1,0 +1,12 @@
+img#doge1{
+    float: left;
+}
+
+img#doge2{
+    float: right;
+}
+
+p:last-child {
+    background-color: beige;
+    clear:both;
+}
