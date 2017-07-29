@@ -10,51 +10,39 @@
 <body>
     <form action="https://formspree.io/mwernerowicz@gmail.com" method="post">
 
-        First name:<br>
-        <input type="text" name="Imię" value="Marta"><br> Last name:<br>
-        <input type="text" name="Nazwisko" value="Slotwinska"><br><br>
-
-
-
-
-
+        <label for="firstname">First name:</label><br>
+        <input type="text" name="Imię" value="Marta" id="firstname"><br/> Last name:<br/>
+        <input type="text" name="Nazwisko" value="Slotwinska"><br/>
 
         <label for="email">Adres email:<br />
                 <input type="text" name= "email" id="email" /></label><br />
-        <label>Telefon:<br />
-                <input type="text" name="telephone"/></label> <br/>
-
-
-
-
-
+        <label for="phone">Telefon:<br />
+                <input type="text" name="telephone" id="phone"/></label> <br/> Wybierz płeć:<br/>
         <input id="female" type="radio" name="gender" value="f">
-        <label for="female">kobieta</label>
+        <label for="female">kobieta</label> <br/>
         <input id="male" type="radio" name="gender" value="m">
         <label for="male">mężczyzna</label><br />
 
-
-
-        <label for="select">Wybierz miasto</label>
+        <label for="select">Wybierz miasto</label> <br/>
         <select id="select">
   <option value="Warszawa">Warszawa</option>
   <option value="Gdańsk">Gdańsk</option>
   <option value="Kraków">Kraków</option>
   <option value="Toruń">Toruń</option>
-</select>
+</select> <br/>
 
-        <p>
-            <label for="comments">Komentarz</label><br />
-            <textarea name="komentarz" rows="4" cols="40" id="comments"></textarea>
-        </p>
-        <fieldset>
-            <label>
-        <input type="checkbox" name="subscribe" checked="checked" />
-        Chcę być informowany o nowych ofertach
-    </label>
-            <br />
-            <input type="submit" value="prześlij infomacje" />
-        </fieldset>
+
+        <label for="comments">Komentarz</label><br />
+        <textarea name="komentarz" rows="4" cols="40" id="comments"></textarea> <br/>
+
+
+        <label for="oferty"> Chcę być informowany o nowych ofertach</label>
+        <input type="checkbox" name="subscribe" checked="checked" id="oferty" />
+
+
+        <br />
+        <input type="submit" value="send" />
+
     </form>
     <footer>
         <p>opublikowane przez: Marta Słotwinska</p>

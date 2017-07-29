@@ -5,32 +5,45 @@ body{
 }
 */
 
-form{
+form {
     background-color: #213b50;
     color: #fff;
-    width:600 px;
+    width: 600 px;
     padding: 20px;
 }
 
-input, textarea, select{
+input[type="text"],
+textarea,
+select {
     background-color: #2b4a64;
-    border: 0px;
+    border: 1px solid;
     color: #fff;
     margin-bottom: 20px;
-    
+    border-color: transparent;
+    width: 300px;
 }
 
-input:focus, textarea:focus, select:focus{
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
     background-color: #4e708c;
     color: #fff;
     border: 1px solid;
     outline: 0 none;
     border-color: #fff;
- 
 }
 
-input[type="submit"]{
-    background-color: green;
+input[type="submit"] {
+    background-color: forestgreen;
     font-weight: 700;
+    text-transform: uppercase;
+    border: 0px;
+    color: #fff;
+    padding: 15px 30px;
 }
+
+input[type="submit"]:hover{
+    cursor: pointer;
+}
+
 
