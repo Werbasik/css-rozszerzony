@@ -1,0 +1,24 @@
+#paragraf1::before{
+    content: "Przed elementem ";
+    color:red;
+}
+
+#paragraf2::after{
+    content: " za elementem.";
+    color:red;
+}
+
+#paragraf3::first-letter{
+    text-transform: lowercase;
+    color: blue;
+}
+
+#paragraf3::selection {
+  background: #ffb7b7; /* WebKit/Blink Browsers */
+}
+
+#paragraf4::first-line{
+    text-transform: uppercase;
+    color: brown;
+}
+
