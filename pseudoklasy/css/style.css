@@ -1,0 +1,40 @@
+a {
+    text-decoration: none;
+}
+
+a:link{
+    color:orange;
+}
+
+a:visited{
+    color:blue;
+}
+
+.klient:active{
+    color:aquamarine;
+}
+
+a:focus{
+    color:red;
+}
+
+p:target{
+    color: blueviolet;
+}
+
+p:lang(pl){
+    color:chartreuse;
+}
+
+div.klient:first-child{
+    font-size: 25px;
+    background-color: aqua;
+}
+
+.klient:nth-child(odd){
+    background-color: red;
+}
+
+.klient:nth-child(5n){
+    background-color: cornflowerblue;
+}
