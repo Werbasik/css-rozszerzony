@@ -1,0 +1,40 @@
+*{
+box-sizing: border-box;
+}
+
+body{
+    font-size: 0;
+}
+
+.box{
+    font-size: 16px;
+    height: 500px;
+    width: 25%;
+    float: left;
+    border: 10px solid orange;
+    padding: 50px;
+
+}
+
+@media (max-width: 780px){
+    .box {
+        width:100%;        
+    }    
+     .box::before{
+    text-transform: uppercase;
+    content: "max width 780px"
+}
+}
+
+@media all and (min-width: 786px) and (max-width: 850px){
+    .box{
+        width: 50%;
+         border: 10px solid red;
+    }
+    
+    .box::before{
+    text-transform: uppercase;
+    content: "min width: 786, max 850"
+}
+    
+}
